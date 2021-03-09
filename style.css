@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  text-decoration: none !important;
   scroll-behavior: smooth;
 }
 
@@ -78,7 +78,7 @@
   margin-top: 2rem;
 }
 
-#Header .btn-success {
+#Header .btn-success a {
   color: #fff;
   text-transform: uppercase;
 }
@@ -217,3 +217,89 @@ h2 {
 }
 
 /* End of Footer */
+
+@media (max-width: 900px) {
+  #Header h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+
+  #Nav {
+    font-size: 1.5rem;
+  }
+
+  #About .about-container {
+    flex-direction: column;
+  }
+  #About .about-img {
+    min-height: 450px;
+  }
+
+  #About p {
+    max-width: 70%;
+  }
+
+  #About .about-description {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  #Header h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  #About .about-img {
+    min-height: 250px;
+    max-width: 80%;
+    background-position-x: 155px;
+  }
+
+  #About p {
+    max-width: 30%;
+  }
+
+  #Nav {
+    height: 15vh;
+    flex-direction: column;
+  }
+  #Nav ul {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #Services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+  }
+  #Contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Nav-logo {
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-self: flex-end;
+  }
+}
